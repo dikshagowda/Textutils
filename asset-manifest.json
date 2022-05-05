@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dikshagowda/Textutils/static/css/main.073c9b0a.css",
+    "main.js": "/dikshagowda/Textutils/static/js/main.7a4ceaf2.js",
+    "static/js/787.719ec76d.chunk.js": "/dikshagowda/Textutils/static/js/787.719ec76d.chunk.js",
+    "index.html": "/dikshagowda/Textutils/index.html",
+    "main.073c9b0a.css.map": "/dikshagowda/Textutils/static/css/main.073c9b0a.css.map",
+    "main.7a4ceaf2.js.map": "/dikshagowda/Textutils/static/js/main.7a4ceaf2.js.map",
+    "787.719ec76d.chunk.js.map": "/dikshagowda/Textutils/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.7a4ceaf2.js"
+  ]
+}
