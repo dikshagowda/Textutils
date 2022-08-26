@@ -30,16 +30,27 @@ function App() {
       }, 1700);
   }
 
-  const toggleMode = ()=>{
+const removeBodyClasses=()=>{
+  document.body.classList.remove('bg-light');
+  document.body.classList.remove('bg-dark');
+  document.body.classList.remove('bg-light');
+  document.body.classList.remove('bg-success');
+  document.body.classList.remove('bg-warning');
+}
+
+  const toggleMode = (cls)=>{
+    removeBodyClasses();
+    console.log(cls);
+    document.body.classList.add('bg-' + cls);
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#042743';
       showAlert("Dark mode has been enabled", "success");
       document.title = "Textutils - Dark Mode";
 
-      setInterval( ()=> {
-        document.title = "Textutils is Amazing";
-      }, 2000);
+      // setInterval( ()=> {
+      //   document.title = "Textutils is Amazing";
+      // }, 2000);
     }
     else{
       setMode('light');
@@ -47,9 +58,9 @@ function App() {
       showAlert("Light mode has been enabled", "success");
       document.title = "Textutils - Light Mode";
 
-      setInterval( ()=> {
-        document.title = "Install Textutils";
-      }, 1500);
+      // setInterval( ()=> {
+      //   document.title = "Install Textutils";
+      // }, 1500);
     }
   }
 
@@ -57,7 +68,8 @@ function App() {
     <>
 
     <Router>
-<Navbar title="Textutils" aboutText="About Textutils" mode={mode} toggleMode={toggleMode}/>
+
+  <Navbar title="Textutils" aboutText="About Textutils" mode={mode} toggleMode={toggleMode}/>
     {/* <Navbar mode={mode}/>  */}
 
     {/* <Navbar title="TextUtils" mode={mode}/> */}
